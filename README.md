@@ -59,6 +59,6 @@ We will start our journey with LCA programs, however the list will keep getting 
 - Not high priority, however if you come with airflow experience, need help converting the data workflow notebooks into airflow DAGs -> Tasks. I say this is not high priority, because the incremental data gets published every quarter and automating it right away is NOT in the critical path (of visualizing reports and highest value)
 
 # How to Contribute
-- Write your jupyter notebook for various visualizations and submit PR (Ask [me](pradeep@automationpractice.com) for sample data set). You can see some examples in src/LCAProgramsH1BH1B1E3 folder
-- For data warehouse tasks, we might need a deeper grooming session , so [email](pradeep@automationpractice.com) me and I will provide bootstrap material that you can go work with
+- Write your jupyter notebook for various visualizations and submit PR (Ask [mailto](mailto:pradeep@automationpractice.com) for sample data set). You can see some examples in src/LCAProgramsH1BH1B1E3 folder
+- For data warehouse tasks, we might need a deeper grooming session , so [[mailto](mailto:pradeep@automationpractice.com) me and I will provide bootstrap material that you can go work with
 - For Metabase, Superset or other dynamic visualization platforms, I will provide the server and data, you would have to learn the tool by *yourself* and create visualizations
