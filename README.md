@@ -17,29 +17,29 @@ Based on publicly available data , we can extract value out of the Programs and 
 Some questions that help with actions for various roles
 ### Government
 
-    Which Visa program was effective ? How much effective in numbers ? Should we continue/discontinue/improve/make changes etc. ? 
+    - Which Visa program was effective ? How much effective in numbers ? Should we continue/discontinue/improve/make changes etc. ? 
 
-    Which geo (states, counties, cities, postal codes, metro areas etc.) are doing well/not well attracting immigration talent ? This has tax implications and we can correlate this with healthiness index, crime index, business index and many more
+    - Which geo (states, counties, cities, postal codes, metro areas etc.) are doing well/not well attracting immigration talent ? This has tax implications and we can correlate this with healthiness index, crime index, business index and many more
 
-    How did the visa program do since 2001 to date? What macro-economic factors might explain changes in visa programs over time trend ?
+    - How did the visa program do since 2001 to date? What macro-economic factors might explain changes in visa programs over time trend ?
 
 ### People
 
-    Which geo should I look for jobs that pay a certain max. salary or above ? Which companies are visa sponsor friendly ?
+    - Which geo should I look for jobs that pay a certain max. salary or above ? Which companies are visa sponsor friendly ?
 
-    Which companies have higher success rate for getting visa approved ?
+    - Which companies have higher success rate for getting visa approved ?
 
-    How can I bargain with right data (mean, median, mode, standard deviation) for salaries and convince my future employer ? And have a fairer bargaining stance with data, instead of ONLY relying on my previous salary
+    - How can I bargain with right data (mean, median, mode, standard deviation) for salaries and convince my future employer ? And have a fairer bargaining stance with data, instead of ONLY relying on my previous salary
 
 ### Entities
 
     If we need high talented engineers (for e.g.) or employees in larger numbers  - which program should I analyze that incentivizes in the right way to all parties involved ? 
 
-    Which geo should I set up my next branch of office, so that I have access to highly talented employees?
+    - Which geo should I set up my next branch of office, so that I have access to highly talented employees?
 
-    How are my competitors in the same industry doing when it comes to competing getting the best of the cream ?
+    - How are my competitors in the same industry doing when it comes to competing getting the best of the cream ?
 
-    How much salaries are my competitors paying to various job titles ? How can I have a fairer negotiation discussion with job seekers ?  
+    - How much salaries are my competitors paying to various job titles ? How can I have a fairer negotiation discussion with job seekers ?  
 
 ### Dimensions and Report Categories
 ![Dimensions and Categories](value_reports.png)
