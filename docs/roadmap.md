@@ -9,6 +9,7 @@ Though we began with publicly available data from OFLC, we will incorporate more
 - [x] Data Cleaning - mixed data types, bad data, transformation etc.
 - [x] Convert to columnar data for efficient storage and retrieval
 - [x] Initial reports and analysis
+- [ ] Integrate with NAICS and SOC hierarchies
 - [ ] Expand Data Visualization with Gold Data - SciKit, Pandas, seaborn etc.
 - [ ] Data warehouse , creation of Dimensions and Fact tables
 - [ ] Dynamic Data Visualization with Gold Data (Metabase, Apache Superset)
