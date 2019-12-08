@@ -55,7 +55,16 @@ We will start our journey with LCA programs, however the list will keep getting 
 # What do I need help with ?
 - Static Data Visualization coding with Seaborn, plotly, pandas and ecosystem or any other library that you bring skills along with you. For now, all code will be written in jupyter notebooks ONLY. I will accept PR's only if it is jupyter notebook as it is easier to verify and go slow first, before taking a marathon. Data intensive projects like this one require precision and I do NOT want to rush with too much code and spend time debugging code, when the real value is actually in the data (and that can be achieved slowly with jupyter notebook step by step)
 - Help create a data warehouse by splitting Gold Data into Dimensions and Facts using [LCA MASTER SCHEMA](docs/lca_master_schema.md). Ultimately, our data warehouse will incorporate all programs, once we solve 0 to 1 problem with LCA data.
-- Dynamic Data Visualization (Metabase, Superset etc.), but open to other open source tools. Because we want to ultimately publish to a web portal and have user interaction for e.g. being able to select a filter on the visual.
+- Dynamic Data Visualization using any of 
+    - [Metabase](https://github.com/metabase/metabase)
+    - [Superset](https://github.com/apache/incubator-superset)
+    - [Smashing](https://github.com/Smashing/smashing)
+    - [Keen Dashboard](https://github.com/keen/dashboards)
+    - [Freeboard](https://github.com/Freeboard/freeboard) - mostly for streaming
+    - [Mozaik](https://github.com/plouc/mozaik)
+    - [Grafana](https://github.com/grafana/grafana) - Has the highest stars on github compared to the rest
+    - [Redash](https://github.com/getredash/redash)  
+But open to other open source tools. Because we want to ultimately publish to a web portal and have user interaction for e.g. being able to select a filter on the visual.
 - Not high priority, however if you come with airflow experience, need help converting the data workflow notebooks into airflow DAGs -> Tasks. I say this is not high priority, because the incremental data gets published every quarter and automating it right away is NOT in the critical path (of visualizing reports and highest value)
 
 # How to Contribute
