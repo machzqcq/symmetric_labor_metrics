@@ -61,19 +61,7 @@ for row in range(DATA_STARTS_FROM, sheet.nrows):
     pk_map.update({
         record['name']: row+1
     })
-    # records.append(record)
-
-
-# for index, record in enumerate(records):
-#     record.update({
-#         'id': index,
-#         'parent_id': pk_map[record['parent']] if record['parent'] else 'null'
-#     })
-#     cur.execute("INSERT INTO lca_group (id, name, type, title, parent) \
-#         VALUES ({id}, '{name}', '{type}', '{title}', {parent_id})".format(**record))
-#     pk_map.update({
-#         record['name']: index
-#     })
+    
 conn.commit()
 print("Records created successfully")
 conn.close()
