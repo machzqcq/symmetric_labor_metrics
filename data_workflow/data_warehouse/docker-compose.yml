@@ -1,0 +1,27 @@
+# Use postgres/example user/password credentials
+version: "3.7"
+
+services:
+
+  db:
+    image: postgres:9.6.16
+    restart: always
+    environment:
+      POSTGRES_DB: lca_program
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+    ports:
+      - 5432:5432
+    volumes:
+      - "./init:/docker-entrypoint-initdb.d"
+      - "dbdata:/var/lib/postgresql/data"
+      - ./seed:/seed
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8090:8080
+
+volumes:
+  dbdata:
