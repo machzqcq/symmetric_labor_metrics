@@ -54,7 +54,7 @@ We will start our journey with LCA programs, however the list will keep getting 
 
 # What do I need help with ?
 - Static Data Visualization coding with Seaborn, plotly, pandas and ecosystem or any other library that you bring skills along with you. For now, all code will be written in jupyter notebooks ONLY. I will accept PR's only if it is jupyter notebook as it is easier to verify and go slow first, before taking a marathon. Data intensive projects like this one require precision and I do NOT want to rush with too much code and spend time debugging code, when the real value is actually in the data (and that can be achieved slowly with jupyter notebook step by step)
-- Help create a data warehouse by splitting Gold Data into Dimensions and Facts using [LCA MASTER SCHEMA](docs/lca_master_schema.md). Ultimately, our data warehouse will incorporate all programs, once we solve 0 to 1 problem with LCA data.
+- Initial datawarehouse schema (maybe call this datamart) and data alignment is done for LCA program. Please see the folder `data_warehouse` Need help creating for rest of the programs. Ultimately, our data warehouse will incorporate all programs (i.e. merge all datamarts)
 - Dynamic Data Visualization using any of 
     - [Metabase](https://github.com/metabase/metabase)
     - [Superset](https://github.com/apache/incubator-superset)
