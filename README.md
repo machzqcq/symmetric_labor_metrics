@@ -3,9 +3,26 @@ Symmetric Labor Metrics<sup>R</sup>  is an innovative & intelligent platform tha
 [Read More](docs/vision.md)
 
 # Data Credibility
-We will start with publicly available data for e.g. [OFLC performance data](https://www.foreignlaborcert.doleta.gov/performancedata.cfm), join with other relevant data like SOC (standard occupational codes for jobs), FIPS (for geo county info) etc. The source of data is as credible as it can get straight from the horses mouth. 
+We will start with publicly available data for e.g. [OFLC performance data](https://www.foreignlaborcert.doleta.gov/performancedata.cfm), join with other relevant data like SOC (standard occupational codes for jobs), FIPS (for geo county info) etc. The source of data is as credible as it can get straight from the horses mouth.
 
-# Reports
+# Dynamic Dashboard
+A full fledged dashboard has been developed  
+[here](Symmetric-Labor-Metrics.mov.gif)  
+
+<strong>I am unable to make the dashboard publicly available (yet) because the dashboard is server rendered and it is too expensive to stand up and maintain such a server.</strong> 
+
+Dashboard access can be provided if you can send an email to [me](mailto:pradeep@automationpractice.com) from your genuine email address in the following format.
+
+```
+Hi,
+Can you provide me access to the dashboard. Here are my top 3 reasons on why I need access.  
+- I work for Acme company and as hiring manager, I would like to know market numbers
+- I am a job seeker and here is my linkedin profile.
+- I am am employer, and I would like to know the competition around me to attract the best talent
+```
+
+
+# Static Reports
 Below are images of the reports generated from this project. Explore the notebooks in `src/LCAProgramsH1BH1B1E3` for actual execution and generate reports, that you want to analyze data in detail. Granular data (for e.g. if you need top 100 employers data) is provided upon request. See section "How to contribute" to reach out, stating your reason on why you need granular data  
 
 H1b Generic Reports             |  H1b Employer Reports
