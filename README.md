@@ -7,7 +7,7 @@ We will start with publicly available data for e.g. [OFLC performance data](http
 
 # Dynamic Dashboard
 A full fledged dashboard has been developed  
-[here](Symmetric-Labor-Metrics.mov.gif)  
+![here](Symmetric-Labor-Metrics.mov.gif)  
 
 <strong>I am unable to make the dashboard publicly available (yet) because the dashboard is server rendered and it is too expensive to stand up and maintain such a server.</strong> 
 
