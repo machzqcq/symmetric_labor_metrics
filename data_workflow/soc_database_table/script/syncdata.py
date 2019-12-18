@@ -1,7 +1,8 @@
 """
 Program to load the soc_structure_2018.xlsx
 """
-
+import os
+import sys
 import xlrd
 import psycopg2
 
@@ -18,15 +19,16 @@ HIERARCHY = [
 
 
 DB_CONFIG = {
-    "database":"lca_program",
-    "user":"lca_program",
-    "password":"lca_program",
-    "host":"127.0.0.1",
-    "port":"5432",
+    "database":os.getenv('DB_NAME', "lca_program"),
+    "user":os.getenv('DB_USER', "lca_program"),
+    "password": os.getenv('DB_PASSWORD', "lca_program"),
+    "host": os.getenv('DB_HOST', "127.0.0.1"),
+    "port": os.getenv('DB_PORT', "5432"),
 }
 
 # Read the source file (xlsx)
-loc = ("../data/soc_structure_2018.xlsx") 
+input_file = sys.argv[1]
+loc = (input_file) 
 
 wb = xlrd.open_workbook(loc) 
 sheet = wb.sheet_by_index(0)
