@@ -143,3 +143,30 @@ ALTER TABLE employment_wage
 COMMENT ON CONSTRAINT ew_case_number ON employment_wage
     IS 'employment case number ';
 
+
+-- Table: public.soc
+
+-- DROP TABLE public.soc;
+
+CREATE TABLE public.soc
+(
+    id bigint NOT NULL,
+    name text COLLATE pg_catalog."default" NOT NULL,
+    type character varying(50) COLLATE pg_catalog."default" NOT NULL,
+    title text COLLATE pg_catalog."default",
+    parent bigint,
+    CONSTRAINT soc_pkey PRIMARY KEY (id),
+    CONSTRAINT parent FOREIGN KEY (parent)
+        REFERENCES public.soc (id) MATCH SIMPLE
+        ON UPDATE NO ACTION
+        ON DELETE NO ACTION
+        NOT VALID
+)
+WITH (
+    OIDS = FALSE
+)
+TABLESPACE pg_default;
+
+ALTER TABLE public.soc
+    OWNER to postgres;
+

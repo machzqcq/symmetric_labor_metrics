@@ -6,6 +6,6 @@ psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" --co
 psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" --command "\\copy employment (em_case_number, em_year_belongs_to, em_case_status, em_submitted_date, em_decision_date, em_visa_class, em_start_date, em_end_date, em_employer_name, em_job_title, em_soc_code, em_soc_name, em_naics_code, em_fulltime_position) FROM '/seed/employment.psv' DELIMITER '|' CSV HEADER";
 psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" --command "\\copy employment_address (ema_case_number, ema_city, ema_county, ema_state, ema_postal_code, ema_county_fips_code) FROM '/seed/employment_address.psv' DELIMITER '|' CSV HEADER ";
 psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" --command "\\copy employment_wage (ew_case_number, ew_prevailing_wage, ew_prevailing_wage_unit_pay, ew_wage_pay_from, ew_wage_pay_to, ew_wage_pay_from_unit, ew_wage_pay_to_unit, ew_normalized_wage) FROM '/seed/employment_wage.psv' DELIMITER '|' CSV HEADER";
-
+psql -v ON_ERROR_STOP=1 --username "$POSTGRES_USER" --dbname "$POSTGRES_DB" --command "\\copy soc (id, name, type, title, parent) FROM '/seed/soc.csv' DELIMITER ',' CSV HEADER";
 
 
