@@ -13,7 +13,7 @@ Python - Runtime: 3.5+
 
 `pip3 install -r requirements.txt`
 
-`python3 syncdata.py`
+`python3 syncdata.py ../data/soc_structure_2018.xlsx`
 
 # Queries to fetch data
 
@@ -23,9 +23,9 @@ Python - Runtime: 3.5+
 select name, title from lca_group where type='Major Group';
 ```
 
-
-`Get all Minor Groups`
+# Using docker-compose
 
 ```
-select name, title from lca_group where type='Minor Group';
+cd data_workflow/soc_database_table
+docker-compose up
 ```

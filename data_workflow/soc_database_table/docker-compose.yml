@@ -1,0 +1,34 @@
+version: "3"
+
+services:
+  postgres:
+    image: postgres:9.6
+    environment:
+      POSTGRES_USER: lca_program
+      POSTGRES_PASSWORD: lca_program
+      POSTGRES_DB: lca_program
+    ports:
+      - 5434:5432
+  postgrescli:
+    image: postgres:9.6
+    links:
+      - postgres
+    depends_on:
+      - postgres
+    volumes:
+      - .:/code
+    command: bash -c "sleep 20s && export PGPASSWORD=lca_program && ls && /usr/bin/psql -U lca_program -h postgres< /code/schema/lca_schema.sql"
+  sync:
+    build: .
+    volumes:
+      - .:/code
+    links:
+      - postgres
+    depends_on:
+      - postgres
+    command: bash -c "sleep 25s && ls /code/ && python3 /code/script/syncdata.py data/soc_structure_2018.xlsx"
+    environment:
+      - DB_NAME=lca_program
+      - DB_USER=lca_program
+      - DB_PASSWORD=lca_program
+      - DB_HOST=postgres
